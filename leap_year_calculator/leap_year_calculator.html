@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            font-size:100%;
+        }
+        h2 {
+            color:#1C94C4; 
+            text-align:center
+        }
+        p {
+            font-size:1em;
+            font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+            text-align:center;
+        }
+        /*.child {
+            display:inline-block;
+            子元素文字会继承居中，因此要在上面写上向左边居中
+            text-align:left;
+        }*/
+        .parent {
+            font-family:Candara;
+            font-size: large;
+            text-align:center;
+        }
+        .center1 {
+            margin: auto;
+            width: 550px;
+            height: 40px;
+            display: flex;
+            line-height: 40px;
+            border:1px solid #E1E4E7;
+            border-radius:5px;
+        }
+        .center1 p {
+            text-align: left;
+            margin-left: 50px;
+            font-size:1em;
+        }
+       
+        .center2 {
+            margin: auto;
+            width: 550px;
+            padding: 20px 10px;
+            border: 1px solid #E1E4E7;
+        }
+
+        .center2 p {
+            font-size:1em;
+            font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+            word-wrap:break-word;
+            margin-left: 30px;
+            display: inline-block;
+            text-align: left;
+        }
+        
+    </style>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Leap Year Calculator</title>
+        <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+        <script src="leap_year_calculator.js"></script>
+    </head>
+
+    <body>
+        <h2 style="margin-top: 20px; font-family: Candara;"><strong>Leap Year Calculator 📅</strong></h2>
+        <br>
+
+        <p style="line-height:1.5;width:550px;text-align:justify; margin:auto;">Use this leap year calculator to <strong>check if a given year is a leap year or not</strong>, and <strong>to find out all leap years between two dates. </strong>E.g. check if 2028 is a leap year, or list all leap years between 1890 and 2010.</p>	
+        <br><br>
+
+        <div class="parent">
+                <strong>Year to check:&nbsp;&nbsp;</strong><input id="num" size="20">
+                <input type="button" value="Calculate" onclick="leap()">
+                <input type="button" value="Reset" onclick="reset_1()">
+                <br><br>
+                
+                <div class="center1">
+                <p style="color:#1C94C4; font-family:Verdana"><strong>Result:&nbsp;&nbsp;</strong></p>
+                <p id="demo" style="margin-left: 40px; font-size:1.1em"></p>
+                </div>
+                
+                <br><br><br>
+                <strong>Start year:&nbsp;&nbsp;</strong><input id="i1" size="5">&nbsp;&nbsp;
+                <strong>End year:&nbsp;&nbsp;</strong><input id="i2" size="5">
+                <input type="button" value="Calculate" onclick="lylist()">
+                <input type="button" value="Reset" onclick="reset_2()">
+        </div>
+        <br>
+        <div class="center2" >
+            <p id="dv2" style="color:#1C94C4; text-align: left; font-family:Verdana"><strong>Number of leap years:&nbsp;&nbsp;</strong></p>
+            <br>
+            <p id="list_year" style="margin-left:50px; margin-right:50px; text-align: justify;"></p>
+        </div>
+        
+        
+    </body>
+</html>
