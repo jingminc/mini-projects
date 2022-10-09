@@ -2,4 +2,8 @@
 
 This calculator allows you to check if the given year is a leap year and find all the leap years in a given range.
 
-![leap_year_calculator(2)](https://user-images.githubusercontent.com/114419836/194769054-22a8392d-c283-427f-ada7-af0b3ad5858d.png)
+### Screenshot:
+
+<img src="https://user-images.githubusercontent.com/114419836/194770026-d0ddcdcd-7015-4c99-ab94-9241fb503e7f.png" width="509" height="325"/><br/>
+
+
